@@ -1,5 +1,5 @@
 {
-  "name": "mrinalblog",
+  "name": "mrinal-blogs",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,7 +20,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "86a99c2f-af65-49d7-b504-cde15a371fe5"
+    "uuid": "7fc293e1-0410-4574-a070-4291e56d2310"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
