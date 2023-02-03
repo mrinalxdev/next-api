@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { getPosts } from '../sevices'
 import { PostCard, Categories, PostWidget } from '../components'
 
 const posts = [
