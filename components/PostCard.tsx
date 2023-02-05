@@ -15,8 +15,32 @@ const PostCard = ({ post }) => {
             alt = {post.title}
             className = "object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-l" 
           />
+      </div>
+      <h1 className = "transition duration-100 text-center mb-8 cursor-pointer hover:text-gray-600 text-3xl font-semibold">
+        <Link href={`/post/${post.slug}`}>
+          {post.title}
+        </Link>
+      </h1>
 
+      <div className = "block lg:flex text-center items-center justify-center mb-8 w-full">
+        <div className = "flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
+          <img 
+            alt = {post.author.name} 
+            height = '30px'
+            width = '30px'
+            className = 'align-middle rounded-full'
+            src = {post.author.photo.url}
+          />
 
+          <p className = "inline align-middle text-gray-700 ml-2 text-lg">
+            {post.author.name}
+          </p>
+
+        </div>
+
+        <div className = "font-medium text-gray-700 ">
+
+        </div>
       </div>
     </div>
   )
