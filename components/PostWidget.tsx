@@ -47,7 +47,6 @@ const PostWidget = ({ categories, slug }) => {
               {post.title}
             </Link>
           </div>
-
         </div>
       })}
     </div>
