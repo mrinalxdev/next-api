@@ -1,6 +1,6 @@
 import React from 'react'
 import { getPosts, getPostDetails } from '../ ../services'
-import { PostDetail, Categories, PsotWidget, Author, Comments, CommentsForm } from '../ ../components'
+import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm } from '../../components'
 
 const PostDetails = () => {
   return (
@@ -10,12 +10,10 @@ const PostDetails = () => {
           <PostDetail />
           <Author />
           <CommentsForm />
-          <Commetns />
+          <Comments />
         </div>
         <div className = "col-span-1 lg:col-sapn-4">
           <div className = "relative lg:sticky top-8">
-            <PostWidget />
-            <Categories />
           </div>
         </div>
       </div>
@@ -24,3 +22,11 @@ const PostDetails = () => {
 }
 
 export default PostDetails
+
+export async function getStaticProps({ params }){
+  const posts = (await getPosts()) || []
+
+  return {
+    props: { posts }
+  }
+}
