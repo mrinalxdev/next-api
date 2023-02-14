@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    font-family: 'Satoshi', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a2647;
+    color: #fff;
+}
+a,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+h1,
+p,
+a {
+    font-family: 'Nunito', sans-serif;
+}
