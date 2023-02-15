@@ -15,10 +15,19 @@ const Navigation = () => {
     alignItems : 'center'
   }
 
+  const logoSize = {
+    fontSize : '29px',
+  }
+
+  const logoText = {
+    marginLeft : '5px',
+  }
+
   return (
     <nav className = {`${styles.navbar} container`} >
       <Link style={logoStyle} to = "/">
-        <span>💻 DevMeets</span>
+        <span style = {logoSize}> 💻 </span>
+        <span style = {logoText}>DevMeets</span>
       </Link>
     </nav>
   )
