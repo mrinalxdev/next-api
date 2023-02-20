@@ -7,11 +7,10 @@ const Home = () => {
     <div className = {styles.card}>
 
       <div className = {styles.headWrapper}>
-        <span>✋</span>
-        <h1>Welcome to DevMeets !</h1>
+        <h1> ✋ Welcome to DevMeets !</h1>
       </div>
 
-      <p>This is the DevMeet's first prototype . While the 1st version is under development 🔥. Try its beta version and be the part of my project 😃 </p>
+      <p>This is the DevMeet's first prototype . While the 1st version is under development 🔥. Try its beta version and be the part of my project 😃.<br /> Join the way along with me to see this project grow  </p>
 
       <div>
         <button> 🤗 Join the Beta</button>

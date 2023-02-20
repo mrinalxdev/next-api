@@ -1,3 +1,20 @@
 .card {
-    
+    width: 500px;
+    max-width: 90%;
+    min-height: 300px;
+    background-color: #144272;
+    margin: 3rem auto;
+    padding: 30px 30px;
+    border-radius: 20px
+}
+.headWrapper {
+    padding-bottom: 22px;
+}
+p {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.btns-cta button{
+    display: inline-block;
 }
