@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className = {styles.card}>
         <div className={styles.headingWrapper}>
-          
+          <img src="" alt="" />
         </div>
     </div>
   )
