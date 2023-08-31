@@ -1,0 +1,18 @@
+.container {
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social {
+    transition: 0.3s all;
+}
+.social:hover {
+    transform: translateY(-5px);
+}
