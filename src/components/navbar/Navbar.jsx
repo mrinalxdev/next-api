@@ -1,21 +1,24 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
-import React from 'react'
-import { links } from '@/constants/constant'
+import Link from "next/link";
+import React from "react";
+import { links } from "@/constants/constant";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div>
-        <Link href="/">DevBlogs</Link>
-        <div>
-          {links.map(link => (
-            <Link key={link.id} href={link.url}>{link.title}</Link>
-          ))}
-          <button>Logout</button>
-        </div>
+    <div className={styles.container}>
+      <Link href="/" className={styles.logo}>DevBlogs</Link>
+      <div className={styles.links}>
+        {links.map((link) => (
+          <Link key={link.id} href={link.url} className={styles.link}>
+            {link.title}
+          </Link>
+        ))}
+        <button className={styles.logout}>Logout</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
