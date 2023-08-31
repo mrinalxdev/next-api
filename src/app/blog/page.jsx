@@ -1,8 +1,11 @@
+import React from 'react'
+import styles from './blog.module.css'
+
+
 const Blog = () => {
-    return (
-        <div>
-            This is Blog Page
-        </div>
-    )
+  return (
+    <div>Blog</div>
+  )
 }
+
 export default Blog

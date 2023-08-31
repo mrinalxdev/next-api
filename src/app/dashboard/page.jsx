@@ -1,8 +1,11 @@
+import React from 'react'
+import styles from './dashboard.module.css'
+
+
 const Dashboard = () => {
-    return (
-        <div>
-            This is Dasbhboard Page
-        </div>
-    )
+  return (
+    <div>Dashboard</div>
+  )
 }
+
 export default Dashboard
