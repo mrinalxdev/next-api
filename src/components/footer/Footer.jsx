@@ -7,7 +7,11 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>2024 DevBlog , Built by Mrinal Pramanick</div>
+      <div>DevLearn , Built by {" "}
+        <Link href="https://mrinal-portfolio.vercel.app">
+          @Mrinal Pramanick
+        </Link>
+      </div>
       <div className={styles.imgContainer}>
         {socialCredentials.map((socialCredential) => (
           <Link key={socialCredential.id} href={socialCredential.url}>
