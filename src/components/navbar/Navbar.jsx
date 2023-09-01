@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { links } from "@/constants/constant";
 import styles from "./navbar.module.css";
+import Button from "../button/Button";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <button className={styles.logout}>Logout</button>
+        <Button title="Logout" url="www.google.com"/>
       </div>
     </div>
   );
